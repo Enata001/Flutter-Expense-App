@@ -1,4 +1,3 @@
-import 'dart:io';
 
 import 'package:expenseapp/widgets/chart.dart';
 import 'package:expenseapp/widgets/new_transaction.dart';
@@ -76,9 +75,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  final titleController = TextEditingController();
-  final amountController = TextEditingController();
-
   final List<Transaction> _userTransaction = [];
 
   List<Transaction> get _recentTransactions {
